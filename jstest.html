@@ -5,28 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "StyleSheet" href="rps.css">
 </head>
 <body>
 
 <p id="output">output</p>
-    <script>
+
+<h1 id="title">rockpaperscissors</h1>
+
+
+
+
+<script>
 
 let playerScore=0;
-let computerScore=0;        
+let computerScore=0;    
+let i=0;    
 
-while(playerScore+computerScore !== 5) {
+while(i==0) {
 let playerInput = prompt("rock? paper? scissors?")
 playerInput = playerInput.toLowerCase();
 gamePlay(playerInput, computerPlay());
 console.log(playerScore);
 console.log(computerScore);
+if(playerScore==3){
+    i=1;
+}
+else if (computerScore==3) {
+    i=1;
+}
+else {
+
+}
 }
 
 if(playerScore==3) {
     console.log("CONGRATS YOU WON!")
+   const title = document.getElementById("title");
+   title.textContent = "humans have survived";
+    
 }
 else if (computerScore==3) {
     console.log("THE COMPUTERS HAVE TAKEN OVER!!");
+    document.getElementById("title").innerHTML = "the computers have taken over";
+    
 }
 else {
 
