@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="output">output</p>
+    <script>
+
+let playerScore=0;
+let computerScore=0;        
+
+while(playerScore+computerScore !== 5) {
+let playerInput = prompt("rock? paper? scissors?")
+playerInput = playerInput.toLowerCase();
+gamePlay(playerInput, computerPlay());
+console.log(playerScore);
+console.log(computerScore);
+}
+
+if(playerScore==3) {
+    console.log("CONGRATS YOU WON!")
+}
+else if (computerScore==3) {
+    console.log("THE COMPUTERS HAVE TAKEN OVER!");
+}
+else {
+
+}
+
+
+function computerPlay () {
+    const game = ["rock", "paper", "scissors"];
+
+let random = game[Math.floor(Math.random()*game.length)];
+console.log(random);
+return random;
+}
+
+
+
+function gamePlay(playerInput, computerInput) {
+//document.getElementById("output").style.color = "red";
+if(playerInput === computerInput) {
+
+    console.log("Tie") 
+}
+else if (playerInput === "rock" && computerInput === "paper"){
+console.log("Computer wins");
+computerScore++;
+}
+else if (playerInput === "rock" && computerInput === "scissors"){
+console.log("Player wins");
+playerScore++;
+}
+else if (playerInput === "paper" && computerInput === "rock"){
+console.log("Player wins");
+playerScore++;
+}
+else if (playerInput === "paper" && computerInput === "scissors"){
+console.log("Computer wins");
+computerScore++;
+}
+else if (playerInput === "scissors" && computerInput === "paper"){
+console.log("Player wins");
+playerScore++;
+}
+else if (playerInput === "scissors" && computerInput === "rock"){
+console.log("Computer wins");
+computerScore++;
+}
+else {
+    console.log("Please type 'rock, paper, or scissors'");
+}
+}
+
+            
+    </script>
+</body>
+</html>
