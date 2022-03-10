@@ -1,6 +1,53 @@
-#title {
+#body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     font-family: Helvetica, sans-serif;
-    font-size: 200px;
+    font-size: 40px;
     font-weight: bolder;
 }
 
+#middle {
+    display: flex;
+    gap: 40px;
+}
+
+#human, #computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-family: Helvetica, sans-serif;
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+#humanchoice, #computerchoice {
+
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+}
+
+#bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#choices {
+    display: flex;
+    flex: 1;
+    padding: 5px;
+    margin: 20px;
+    gap: 20px;
+}
+
+#rock, #paper, #scissors {
+background-color: #555;
+padding: 30px;
+
+}
