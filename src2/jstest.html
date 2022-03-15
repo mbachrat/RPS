@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "StyleSheet" href="rps.css">
+</head>
+<body>
+
+<div id="body">
+<h1 id="title">rockpaperscissors</h1>
+<div id="middle">
+<div id="human">
+<img src="../pics/human.png" alt=":)" width="auto" height="200">
+<p>human</p>
+<p>score: <span id="humanscore"></span></p>
+
+</div>
+<div id="humanchoice">
+<img id="humanimage">
+
+</div>
+<p id="vs">vs.</p>
+<div id="computerchoice">
+    <img id="computerimage">
+
+</div>
+<div id="computer">
+    <img src="../pics/computer.jpg" alt="*_*" width="auto" height="200
+    ">
+    <p>computer</p>
+    <p>score: <span id="computerscore"></span></p>
+</div>
+</div>
+<div id="bottom">
+    <p>choices</p>
+    <div id="choices">
+        <button id="btn1" onclick="buttonTest(this)" value="rock">
+          <img id="rock" src="../pics/rock.png" alt="rock" width="60" height="auto">
+        </button>
+        <button id="btn2" onclick="buttonTest(this)" value="paper">
+        <img id="paper" src="../pics/paper.png" alt="paper" width="60" height="auto">
+        </button>
+        <button id="btn3" onclick="buttonTest(this)" value="scissors">
+        <img id="scissors" src="../pics/scissors.png" alt="scissors" width="60" height="auto">
+        </button>
+    </div>
+</div>
+</div>
+
+<script src="jstest.js"></script> 
+
+</body>
+</html>

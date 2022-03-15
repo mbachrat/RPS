@@ -1,0 +1,87 @@
+#body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+#middle {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+#human, #computer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title {
+    font-family: Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: bolder;
+    margin-top: -10px;
+}
+
+#humanchoice, #computerchoice {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: #555;
+}
+
+#humanchoice {
+    margin-left: 50px;
+}
+
+#vs {
+    padding: 50px;
+}
+
+#computerchoice {
+    margin-right: 70px;
+}
+
+#bottom {
+    margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#choices {
+    margin-top: -30px;
+    display: flex;
+    flex: 1;
+    padding: 5px;
+    margin: 20px;
+    gap: 20px;
+}
+
+#rock, #paper, #scissors {
+background-color: #555;
+padding: 30px;
+
+}
+
+#restartButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+#humanimage, #computerimage {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin: 30px;
+    width: auto;
+    height: 80px;
+}
